@@ -61,3 +61,7 @@ class Messenger(object):
             "color": "#7CD197",
         }
         self.clients.web.chat.post_message(channel_id, txt, attachments=[attachment], as_user='true')
+
+    def sendHelloWorld(self, channel_id):
+        txt = "Hello world!"
+        self.send_message(channel_id, txt)
