@@ -63,5 +63,5 @@ class Messenger(object):
         self.clients.web.chat.post_message(channel_id, txt, attachments=[attachment], as_user='true')
 
     def sendHelloWorld(self, channel_id):
-        txt = "asdf"
-        self.send_message(channel_id, txt)
+        question = "Why did the python cross the road?"
+        self.send_message(channel_id, question)
